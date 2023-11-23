@@ -1,0 +1,15 @@
+/* Univeral Selector */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(179, 236, 179)
+
+}
+.container{
+    text-align: center;
+    background-color: pink;
+}
+

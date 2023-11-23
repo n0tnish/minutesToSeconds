@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ni-shaat's Converter</title>
+    <link rel="stylesheet" link href="/CSS/style.css">
+</head>
+<body>
+    <div class="container" id="box">
+    <p>Enter a number: <input type="text" name="text" id="number"></p>
+    <p><button onclick="timeConvert( )">Click Me !</button></p>
+    <p id="result"></p>
+    </div>
+
+
+    <script type="text/javascript">
+        function timeConvert( ){
+    let num = document.getElementById('number').value;
+    const hours = Math.floor(num/60);
+    const minutes = num % 60;
+    document.getElementById('result').innerHTML = hours + minutes + '<br>' + '(' + hours + 'Hours & ' + minutes + 'Minutes)';
+}
+
+    </script>
+</body>
+</html>
